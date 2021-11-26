@@ -64,6 +64,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //Replik
+    public void onClickPerimetroR(View miView){
+        operador="PerimetroR";
+        onClickOperacionCapturaNumero1(miView);
+    }
+    public void onClickPerimetroD(View miView){
+        operador="PerimetroD";
+        onClickOperacionCapturaNumero1(miView);
+    }
 
     //Oscar
     public void onClickAreaPoligono(View miView){
@@ -103,6 +111,14 @@ public class MainActivity extends AppCompatActivity {
                                     }else{
                                         if (operador.equals("area")) {
                                             resultado = num1 * num1 * Math.PI;
+                                        }else{
+                                            if(operador.equals("PerimetroR")){
+                                                resultado = Math.PI * num1 * 2;
+                                            }else{
+                                                if (operador.equals("PerimetroD")){
+                                                    resultado = Math.PI * num1;
+                                                }
+                                            }
                                         }
                                     }
                                 }

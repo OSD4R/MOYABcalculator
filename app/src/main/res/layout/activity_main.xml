@@ -9,6 +9,38 @@
     android:onClick="onClickOperacionCapturaNumero1"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/pBtn2"
+        android:layout_width="105dp"
+        android:layout_height="51dp"
+        android:backgroundTint="@color/black"
+        android:onClick="onClickPerimetroD"
+        android:text="Perimetro circulo   (D)"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/guideline1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline0"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:layout_constraintVertical_bias="0.915" />
+
+    <Button
+        android:id="@+id/pBtn"
+        android:layout_width="105dp"
+        android:layout_height="51dp"
+        android:backgroundTint="@color/black"
+        android:onClick="onClickPerimetroR"
+        android:text="Perimetro circulo   (R)"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/guideline1"
+        app:layout_constraintHorizontal_bias="0.777"
+        app:layout_constraintStart_toStartOf="@+id/guideline0"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:layout_constraintVertical_bias="0.0" />
+
     <TextView
         android:id="@+id/TextView"
         android:layout_width="0dp"
