@@ -52,6 +52,11 @@ public class MainActivity extends AppCompatActivity {
     // Team methods-------------------------------------------------
     //Yoshi
 
+    public void onClickVolCilindro(View miView){
+        operador="VolCilindro";
+        onClickOperacionCapturaNumero1(miView);
+    }
+
     //Mora
 
     //Replik
@@ -88,6 +93,10 @@ public class MainActivity extends AppCompatActivity {
                             }else{
                                 if (operador.equals("AreaPoligono")){
                                     resultado = num1 * num2 / 2;
+                                }else{
+                                    if (operador.equals("VolCilindro")){
+                                        resultado = Math.PI * num1 * num1 * num2;
+                                    }
                                 }
                             }
                         }

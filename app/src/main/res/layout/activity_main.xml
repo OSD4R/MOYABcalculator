@@ -134,6 +134,21 @@
         app:layout_constraintTop_toTopOf="@+id/guideline6" />
 
     <Button
+        android:id="@+id/vcBtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:backgroundTint="@color/black"
+        android:onClick="onClickVolCilindro"
+        android:text="volumen cilindro (r y h)"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/guideline0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:layout_constraintVertical_bias="0.514" />
+
+    <Button
         android:id="@+id/twoBtn"
         android:layout_width="100dp"
         android:layout_height="100dp"
