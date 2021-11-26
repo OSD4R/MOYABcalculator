@@ -58,6 +58,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //Mora
+    public void onClickAreaC(View miView){
+        operador="area";
+        onClickOperacionCapturaNumero1(miView);
+    }
 
     //Replik
 
@@ -96,6 +100,10 @@ public class MainActivity extends AppCompatActivity {
                                 }else{
                                     if (operador.equals("VolCilindro")){
                                         resultado = Math.PI * num1 * num1 * num2;
+                                    }else{
+                                        if (operador.equals("area")) {
+                                            resultado = num1 * num1 * Math.PI;
+                                        }
                                     }
                                 }
                             }
